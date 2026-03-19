@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update History Book</title>
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+</head>
+
+<body>
+<form id="updateForm" class="w-75 m-auto">
+<div class="container mt-5">
+<h2 class="mb-4">Update History Book</h2>
+<div class="mb-3">
+<label class="form-label">Image URL</label>
+<input type="text" id="image" name="image" class="form-control" required>
+</div>
+<div class="mb-3">
+<label class="form-label">Price</label>
+<input type="number" id="price" name="price" class="form-control" required>
+</div>
+<button type="submit" class="btn btn-primary">Update Book</button>
+<a href="home.html" class="btn btn-secondary ms-2">Cancel</a>
+</div>
+</form>
+
+    <script src="./Js/jquery-3.6.3.min.js"></script>
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+    <script src="./Js/static-main.js"></script>
+    <script>
+        (async function() {
+            await App.init();
+            App.initUpdatePage();
+        })();
+    </script>
+</body>
+
+</html>
